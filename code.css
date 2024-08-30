@@ -1,0 +1,308 @@
+body {
+    background-color: #F9F9F9;
+    width: 100%;
+}
+
+.btn-filled {
+    padding: 5px 18px !important;
+    border: none !important;
+    outline: none !important;
+    border-radius: 4px;
+    color: #F9F9F9 !important;
+    background-color: #EC185E !important;
+    ;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #343a40;
+    /* Dark background color */
+}
+
+.navbar-nav .nav-item {
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    /* Text color */
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #17a2b8;
+    /* Hover color */
+}
+
+/* Search and Person Icons */
+.navbar-nav .nav-link i {
+    font-size: 22px;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    .navbar-nav {
+        margin-top: 10px;
+    }
+
+    .navbar-toggler-icon {
+        background-color: #fff;
+        /* Color of the navbar toggle icon */
+    }
+}
+
+/* Optional: Add this if you want a shadow below the navbar */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+#hero-heading,
+#hero-desc {
+    position: relative;
+    z-index: 3;
+}
+
+.highlighted {
+    color: #7896E2;
+}
+
+html * {
+    font-family: "Playfair Display", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h1 span,
+h2 span {
+    font-family: "Playfair Display", serif;
+}
+
+.bg-light {
+    background-color: #F9F9F9 !important;
+}
+
+nav {
+    background-color: transparent;
+    width: 100%;
+    z-index: 100;
+    height: 69px;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 200% !important;
+}
+
+#site-logo {
+    height: 49px;
+}
+
+.small-line {
+    width: 70px;
+    height: 3px;
+    margin: 8px 0px;
+    background-color: #334EBD;
+}
+
+.box-shadow {
+    box-shadow: 0px 0px #888;
+}
+
+#hero-desc {
+    width: 50% !important;
+}
+
+.rectangle-card,
+.rectangle-card img {
+    border-radius: 0 !important;
+}
+
+.bi-star,
+.bi-star-fill,
+.bi-star-half {
+    color: #FFAA00;
+}
+
+.scrolled {
+    background-color: #F8F8F8 !important;
+}
+
+.scrolled a,
+.scrolled .navbar-toggler {
+    color: #404040 !important;
+}
+
+.scrolled a[role=button] {
+    color: #EEEEEE !important;
+}
+
+@media (max-width: 767px) {
+    nav {
+        min-height: 60px !important;
+    }
+
+    .navbar-collapse {
+        text-align: left;
+        background-color: #F7F7F7;
+        padding: 2%;
+        position: fixed;
+        top: 60px !important;
+        left: 0;
+        width: 100% !important;
+    }
+
+    #site-logo {
+        height: 41px;
+    }
+
+    .navbar-collapse li a {
+        color: #101010 !important;
+    }
+}
+
+footer {
+    background-color: #F9F9F9;
+}
+
+.jumbotron {
+    padding-bottom: 116px;
+    border-radius: 0;
+    overflow: hidden;
+    width: 100% !important;
+    background-image: linear-gradient(to top right, #292e3f, #6b263a);
+}
+
+.jumbotron p {
+    position: relative;
+    z-index: 20;
+}
+
+.bg-img-1 {
+    background-image: url(menu.jpg);
+}
+
+.bg-img-2 {
+    background-image: url(constantin-mutaf-SxrgpMXU4hs-unsplash.jpg);
+}
+
+.bg-img-3 {
+    background-image: url(manu2.jpg);
+}
+
+.carousel-image {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.lead {
+    font-size: 1.25rem;
+    margin-top: 27px;
+    font-weight: 300;
+}
+
+.reserved-message {
+    color: #4caf50;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.reservation-form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.form-group select {
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.form-group button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-group button:hover {
+    background-color: #45a049;
+}
+
+
+
+.row featurette py-2 text-dark {
+    margin-top: 30px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.image-container img {
+    width: auto;
+    /* Change to auto */
+    max-height: 100px;
+    /* Adjust the max-height as needed */
+    margin-right: 10px;
+    /* Optional: Adjust margin between images */
+}
+
+.container3 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 20px;
+}
+
+.container3 h2 {
+    color: #333;
+    /* Optional: Set your preferred text color */
+}
+
+.container3 p {
+    color: #666;
+    /* Optional: Set your preferred text color */
+}
+
+#rand.col-md-3 {
+    margin-left: 560px;
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .topnav {
+            overflow: hidden;
+            background-color: #333333;
+        }
+
+        /* Navbar links */
+        .topnav a {
+            float: left;
+            color: #9d57ed;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #dddddd;
+            color: black;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+            text-align: center;
+            padding: 32px;
+        }
+
+        .row {
+            display: -ms-flexbox;
+            /* IE 10 */
+            display: flex;
+            -ms-flex-wrap: wrap;
+            /* IE 10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+        /* Create two equal columns that sits next to each other */
+        .column {
+            -ms-flex: 50%;
+            /* IE 10 */
+            flex: 50%;
+            padding: 0 4px;
+        }
+
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: #555;
+            overflow: auto;
+        }
+
+        /* Navbar links */
+        .navbar a {
+            float: left;
+            text-align: center;
+            padding: 12px;
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        /* Navbar links on mouse-over */
+        .navbar a:hover {
+            background-color: #000;
+        }
+
+        /* Current/active navbar link */
+        .active {
+            background-color: #04AA6D;
+        }
+
+        /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+        @media screen and (max-width: 500px) {
+            .navbar a {
+                float: none;
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a class="active" href="code.html"><i class="fa fa-fw fa-home"></i> Home</a>
+
+    </div>
+    <div class="header" id="myHeader">
+        <h1>Gallery</h1>
+        <!-- <p>Click on the buttons to change the grid view.</p> -->
+        <!-- <button class="btn" onclick="one()">1</button>
+  <button class="btn active" onclick="two()">2</button> 
+  <button class="btn" onclick="four()">4</button> -->
+    </div>
+
+
+
+    <div class="row">
+        <div class="column">
+            <img src="biryani.jpeg" style="width:100%">
+            <img src="img1.jpeg" style="width:100%">
+            <img src="img2.jpeg" style="width:100%">
+            <img src="img3.jpeg" style="width:100%">
+            <img src="s2.jpg" style="width:100%">
+            <img src="img5.jpeg" style="width:100%">
+            <img src="img6.jpg" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="img7.jpg" style="width:100%">
+            <img src="naan.jpeg" style="width:100%">
+            <img src="s1.jpg" style="width:100%">
+            <img src="img4.jpeg" style="width:100%">
+            <img src="img8.jpg" style="width:100%">
+            <img src="s3.jpg" style="width:100%">
+            <img src="s4.jpg" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="thaali1.jpg" style="width:100%">
+            <img src="veg2.jpeg" style="width:100%">
+            <img src="s6.jpeg" style="width:100%">
+            <img src="veg.jpeg" style="width:100%">
+            <img src="roti.jpeg" style="width:100%">
+            <img src="Lbiryani-1.jpeg" style="width:100%">
+            <!-- <img src="img8.jpg" style="width:100%"> -->
+        </div>
+        <div class="column">
+            <img src="full.jpg" style="width:100%">
+            <img src="img9.jpeg" style="width:100%">
+            <img src="img10.jpeg" style="width:100%">
+            <img src="ig1.jpg" style="width:100%">
+            <img src="ig2.jpg" style="width:100%">
+            <img src="ig3.jpg" style="width:100%">
+            <img src="ig4.jpg" style="width:100%">
+
+        </div>
+    </div>
+
+    <script>
+        // Get the elements with class="column"
+        var elements = document.getElementsByClassName("column");
+
+        // Declare a loop variable
+        var i;
+
+        // Full-width images
+        // function one() {
+        //     for (i = 0; i < elements.length; i++) {
+        //     elements[i].style.msFlex = "100%";  // IE10
+        //     elements[i].style.flex = "100%";
+        //   }
+        // }
+
+        // Two images side by side
+        // function two() {
+        //   for (i = 0; i < elements.length; i++) {
+        //     elements[i].style.msFlex = "50%";  // IE10
+        //     elements[i].style.flex = "50%";
+        //   }
+        // }
+
+        // Four images side by side
+        function four() {
+            for (i = 0; i < elements.length; i++) {
+                elements[i].style.msFlex = "25%";  // IE10
+                elements[i].style.flex = "25%";
+            }
+        }
+
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("myHeader");
+        var btns = header.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+
+</body>
+
+</html>

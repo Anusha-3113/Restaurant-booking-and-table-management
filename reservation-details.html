@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Details</title>
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+            /* Added to stack elements vertically */
+        }
+
+        #reservations {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .delete-button {
+            background-color: #ff4d4d;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        h3 {
+            color: red;
+            margin-top: 20px;
+        }
+    </style>
+
+    <section id="reservations">
+        <h2>Reservation Details</h2>
+
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>People</th>
+            </tr>
+            <script>
+                // Retrieve data from local storage
+                var reservationData = JSON.parse(localStorage.getItem('reservationData'));
+
+                // Display reservation details in a table
+                if (reservationData) {
+                    document.write("<tr>");
+                    document.write("<td>" + reservationData.name + "</td>");
+                    document.write("<td>" + reservationData.email + "</td>");
+                    document.write("<td>" + reservationData.phone + "</td>");
+                    document.write("<td>" + reservationData.date + "</td>");
+                    document.write("<td>" + reservationData.time + "</td>");
+                    document.write("<td>" + reservationData.people + "</td>");
+                    document.write("</tr>");
+                }
+            </script>
+        </table>
+    </section>
+    <h3 style="color: red;">
+        <center>Hurry..!!Only 10 tables left..</center>
+    </h3>
+
+</body>
+
+</html>

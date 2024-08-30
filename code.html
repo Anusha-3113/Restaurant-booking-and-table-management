@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="code.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <title>Restaurant bookings and table management</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark">
+        <div class="container-fluid">
+            <a href="index.php"><span id="site-logo" class="text-light">Restaurant book</span></a>
+            <button class="navbar-toggler text-light" data-target="#navbar01" data-toggle="collapse" type="button"> <i
+                    id="toggle-icon" class="bi-list"></i> </button>
+            <div class="collapse navbar-collapse" id="navbar01">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#footer" onclick="scrollToFooter()">Contact</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#"><i class="bi-search"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="bi-person-fill"></i></a></li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="jumbotron mb-0 text-light text-left" style="padding-top:131px;position:relative;margin-top:0px;">
+        <h2 id="hero-heading">Darling Feast - Desi Foods</h2>
+        <p id="hero-desc" class="lead small">When flavour meets passion, magic happens. Our dishes will soothe your
+            eyes, nourish your palate and gratify your soul. </p>
+        <p id="hero-desc" class="lead small">A ticket to heavenly food experience</p>
+        <p><a class="btn btn-sm btn-filled mb-1" href="#dine" role="button">Dine</a> <a
+                class="btn btn-sm btn-outline-light mb-1" style="padding: 3.5px 16.5px !important;border-radius: 4px;"
+                href="Menu1.html" role="button">Menu</a></p>
+    </section>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item carousel-image bg-img-1 active">
+                <div class="carousel-caption">
+                    <a class="btn btn-primary btn-lg" href="#" role="button">View Menu</a>
+                </div>
+            </div>
+            <div class="carousel-item carousel-image bg-img-2">
+                <div class="carousel-caption">
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Book a Table</a>
+                </div>
+            </div>
+            <div class="carousel-item carousel-image bg-img-3">
+                <div class="carousel-caption">
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Today's Specials</a>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+    <section id="about">
+        <div class="container py-4">
+            <div class="container">
+                <div class="row featurette py-2 text-dark">
+
+                    <div class="col-md-7 order-md-2">
+                        <h2 style="color:#3e1e51;" class="featurette-heading">The Desi Resto</h2>
+                        <p class="lead">The Desi Resto has been serving delightful experiences through the art of
+                            cooking
+                            for four decades.
+                            A cozy, relaxing space combined with flavourful indian dishes makes it a first choice for
+                            every
+                            foodie
+                            in town. It provides a wide range of items to choose from and lets everyone indulge in an
+                            experience of pleasing their taste buds.
+
+                            We provides a wide range of cuisines and dishes to choose from so that every foodie in town
+                            has
+                            their best experience here.
+
+                            We are known to be the best Dum Biryani in Hyderabad. We have always won the hearts of our
+                            customers with appetizing dishes and friendly behaviour. It is the best choice for everyone
+                            who
+                            wants to enjoy the best quality food at reasonable prices.</p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                            src="Lbiryani-1.jpeg">
+                    </div>
+    </section>
+    </div>
+    </div>
+    </div>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Restaurant Reservation</title>
+    </head>
+
+    <body>
+
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Restaurant Reservation</title>
+        </head>
+
+        <body>
+
+            <section id="dine">
+                <div class="reservation-form">
+                    <script>
+                        function reserveTable(event) {
+                            event.preventDefault();
+
+                            // Get form values
+                            var name = document.getElementById('name').value;
+                            var email = document.getElementById('email').value;
+                            var phone = document.getElementById('phone').value;
+                            var date = document.getElementById('date').value;
+                            var time = document.getElementById('time').value;
+                            var people = document.getElementById('people').value;
+
+                            // Store data in local storage
+                            localStorage.setItem('reservationData', JSON.stringify({
+                                name: name,
+                                email: email,
+                                phone: phone,
+                                date: date,
+                                time: time,
+                                people: people
+                            }));
+
+                            // Redirect to reservation-details.html
+                            window.location.href = 'reservation-details.html';
+                        }
+
+                        function showReservations() {
+                            window.location.href = 'reservation-details.html';
+                        }
+                    </script>
+                    <h2>Restaurant Reservation</h2>
+                    <form id="reservationForm" onsubmit="reserveTable(event)">
+                        <p style="margin-bottom: 50px;">You can book your table online easily in just a couple of
+                            minutes. We
+                            take reservations for lunch, just check the availability of your table.</p>
+
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="time">Time</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="people">Number of People</label>
+                            <select id="people" name="people" required>
+                                <option value="1">1 person</option>
+                                <option value="2">2 people</option>
+                                <option value="3">3 people</option>
+                                <option value="4">4 people</option>
+                                <option value="5">5 people</option>
+                                <option value="6">jumbo (5+)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit">Reserve Table</button>
+                        </div>
+
+                        <div id="reservedMessage" class="reserved-message">
+
+                        </div>
+
+                    </form>
+                </div>
+            </section>
+
+
+
+
+
+
+
+            <section id="excellence">
+                <div class="container3">
+                    <h2>Excellence</h2>
+                    <p>We are blessed enough to be honoured with great awards from food critics and organizations all
+                        over
+                        the
+                        world.</p>
+                    <div class="image-container">
+                        <img src="swiggy.png" alt="Image 1">
+                        <img src="zom.png" alt="Image 2">
+                        <img src="do.png" alt="Image 3">
+                    </div>
+                </div>
+            </section>
+            <footer id="footer" class="py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h5 class="text-dark">Desi Foods</h5>
+                            <p class="text-dark"><i class="bi-geo-alt"></i>Hyderabad</p>
+                            <p class="text-dark"><i class="bi bi-telephone"></i> 040-61996189</p>
+                            <p class="text-dark"><i class="bi bi-envelope"></i> info@desifoods.com</p>
+                            <ul class="list-unstyled">
+                                <li class="d-inline-block pr-1"><a href="#" class="bi-facebook text-dark"></a></li>
+                                <li class="d-inline-block pr-1"><a href="#" class="bi-twitter text-dark"></a></li>
+                                <li class="d-inline-block pr-1"><a href="#" class="bi-instagram text-dark"></a></li>
+                                <li class="d-inline-block pr-1"><a href="#" class="bi-linkedin text-dark"></a></li>
+                                <li class="d-inline-block pr-1"><a href="#" class="bi-youtube text-dark"></a></li>
+                            </ul>
+                        </div>
+
+
+                        <div class="col-md-3" id="rand">
+                            <h5 class="text-dark">Newsletter</h5>
+                            <p class="text-dark">Subscribe to our newsletter</p>
+                            <div class="input-group w-100">
+                                <input type="email" class="form-control mb-2 rounded-0" style="min-width:120px;"
+                                    placeholder="Email">
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-filled mb-2 rounded-0">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <p class="text-dark mb-0">desi foods &copy; 2024. All Rights Reserved.
+                                <!-- <a href="https://www.pexels.com" style="text-decoration: underline;" class="text-dark">Photos
+                            provided by Pexels</a> -->
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </body>
+
+        </html>
